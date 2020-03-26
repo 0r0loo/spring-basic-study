@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.cho"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="JSR250"/>
+			<item value="AnnotationBean"/>
+			<item value="JavaDI"/>
+			<item value="InitDestroy"/>
+			<item value="JavaBeanConfiguration"/>
+			<item value="AutoWire"/>
+			<item value="CollectionDI"/>
+			<item value="SetterDI"/>
+			<item value="ConstructorDI"/>
+			<item value="BeanPostProcessor"/>
+			<item value="BeanLifeCycle"/>
+			<item value="BeanCreate"/>
+			<item value="IoC"/>
+			<item value="SpringBasic"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\InitDestroy\src\main\java\com\cho\main\MainClass.java"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\SpringBasic\src\main\java\com\cho\config\beans.xml"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\AutoWire\src\main\java\com\cho\beans\TestBean1.java"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\CollectionDI\src\main\java\com\cho\main\MainClass.java"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\BeanPostProcessor"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\BeanCreate\src\main\java\com\cho\config\beans.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

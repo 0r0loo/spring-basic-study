@@ -1,0 +1,12 @@
+package com.cho.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx =
+				new ClassPathXmlApplicationContext("com/cho/config/Beans.xml");
+	}
+
+}

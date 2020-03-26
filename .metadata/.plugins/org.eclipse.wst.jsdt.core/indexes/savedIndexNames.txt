@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

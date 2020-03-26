@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="xml" class="com.cho.beans.TestBean1" lazy-init="true">
+		<constructor-arg value="100" type="int" index="0"></constructor-arg>
+		<constructor-arg value="문자열1" index="1"/>
+		<constructor-arg ref="data_bean1" index="2"/>
+	</bean>
+	
+	<bean id="xml2" class="com.cho.beans.TestBean1" lazy-init="true">
+		<property name="data1" value="300"/>
+		<property name="data2" value="문자열3"/>
+		<property name="data3" ref="data_bean1"/>
+	</bean>
+	
+	<bean id="data_bean1" class="com.cho.beans.DataBean1"/>
+	
+	
+	<!-- id가 일치해야함 변수명이랑 data1 , data2 -->
+	<bean id="data1" class="com.cho.beans.DataBean2"/>
+	<bean id="data2" class="com.cho.beans.DataBean2"/>
+	
+	<bean id="xml3" class="com.cho.beans.TestBean2" lazy-init="true" autowire="byName"/>
+	
+	<bean id="data1" class="com.cho.beans.DataBean3"/>
+	<bean id="data2" class="com.cho.beans.DataBean3"/>
+	
+	<bean id="xml4" class="com.cho.beans.TestBean3" lazy-init="true" autowire="byType"/>
+	
+</beans>
+
+

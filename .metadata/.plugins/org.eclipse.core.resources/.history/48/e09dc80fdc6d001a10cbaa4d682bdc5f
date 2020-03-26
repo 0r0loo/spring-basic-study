@@ -1,0 +1,23 @@
+package com.cho.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.cho.beans.TestBean1;
+
+@Configuration
+public class BeanConfigClass {
+	@Bean                  
+	public TestBean1 java1() {/* 메소드의 이름이 xml에서의 id임*/
+		TestBean1 t1 = new TestBean1();
+		return t1;
+	}
+	
+	
+	@Bean
+	public TestBean1 java500() {
+		TestBean1 t1 = new TestBean1();
+		return t1;
+	}
+	
+}

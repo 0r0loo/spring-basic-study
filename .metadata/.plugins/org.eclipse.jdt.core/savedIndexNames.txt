@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\.metadata\.plugins\org.eclipse.jdt.core
+523992698.index
+3544481523.index
+3529817611.index
+497162892.index
+1810382474.index
+1796109869.index
+2480176495.index
+3603827271.index
+1999291334.index
+1785381985.index
+4024174120.index
+3264253582.index
+2782988813.index
+741470281.index
+4123298238.index
+1231374035.index
+522830987.index
