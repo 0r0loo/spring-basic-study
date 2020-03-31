@@ -7,6 +7,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringJDBC"/>
+			<item value="AOPJava"/>
+			<item value="ExecutionDirective"/>
+			<item value="AOP"/>
 			<item value="ComponentAutowired"/>
 			<item value="ComponentSetting"/>
 			<item value="Compenent"/>
@@ -18,10 +22,6 @@
 			<item value="AutoWire"/>
 			<item value="CollectionDI"/>
 			<item value="SetterDI"/>
-			<item value="ConstructorDI"/>
-			<item value="BeanPostProcessor"/>
-			<item value="BeanLifeCycle"/>
-			<item value="BeanCreate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -51,6 +51,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\ExecutionDirective\pom.xml"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\ComponentSetting"/>
+			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\ComponentAutowired"/>
 			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\InitDestroy\src\main\java\com\cho\main\MainClass.java"/>
 			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\SpringBasic\src\main\java\com\cho\config\beans.xml"/>
 			<item value="C:\Users\thril\Desktop\inflearn\softcampus\spring-basic\workspace-spring-basic\AutoWire\src\main\java\com\cho\beans\TestBean1.java"/>
