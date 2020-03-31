@@ -7,6 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ComponentAutowired"/>
+			<item value="ComponentSetting"/>
+			<item value="Compenent"/>
 			<item value="JSR250"/>
 			<item value="AnnotationBean"/>
 			<item value="JavaDI"/>
@@ -19,8 +22,6 @@
 			<item value="BeanPostProcessor"/>
 			<item value="BeanLifeCycle"/>
 			<item value="BeanCreate"/>
-			<item value="IoC"/>
-			<item value="SpringBasic"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
