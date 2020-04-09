@@ -240,9 +240,197 @@
 
 ## Component
 
+### @Component
+
+- @Component 어노테이션을 사용하면 Bean Configuration 파일에 Bean을 등록 하지 않아도 자동으로 등록 된다.
+
+### XML을 이용하는 방식
+
+- Bean에 설정된 설정들을 탐색하기 위해 다음과 같이 작성
+
+```xml
+<context:component-scan base-package="com.cho.beans"/>
+```
+
+### Bean Configuration Class 사용
+
+- Bean에 설정된 설정들을 탐색하기 위해 다음과 같이 작성
+
+```java
+@ComponentScan(basePackages={"com.cho.beans"})
+```
+
+### @Bean, @Component
+
+- @Bean : 개발자가 Class의 코드를 수정할 수 없는 경우, 같은 클래스 타입의 Bean을 여러 개 등록할 경우
+- @Component : 개발자가 Class의 코드를 수정할 수 있는 경우
+
+***
+
+## Componet Bean 기본 설정
+
+### @Component
+
+- @Component 어노테이션만 사용하면 타입을 통해 Bean 객체를 가져올 수 있다.
+
+### @Component("이름")
+
+- 설정한 이름으로 Bean 객체를 가져올 수 있다.
+
+### @Lazy
+
+- getBean 메서드를 호출할 때 객체가 생성된다.
+
+### @Scope("prototype")
+
+- Prototype으로 설정한다(호출할때마다 새로운 객체 생성)
+
+### @PostConstruct, @PreDestroy
+
+- 생성자 호출 이후 자동으로 호출될 메서드와 객체가 소멸될 때 자동으로 호출되는 메서드를 등록한다.
+
+***
+
+## Component 자동 주입
+
+### Component 자동 주입
+
+- @Bean을 통해 설정했던 주입과 동일한 방식을 이용한다.
+- @Autowired : 타입을 통한 자동 주입
+- @Qualifier : 이름을 통한 자동 주입
+- 생성자의 경우 타입이 같은 Bean을 찾아 자동으로 주입한다.
+
+
+
+
+
+***
+
+
+
 ## AOP
 
+## AOP
+
+### AOP 
+
+- Aspect Oriented Programming : 관점 지향 프로그래밍
+- 하나의 프로그램을 관점(혹은 관심사)라는 논리적인 단위로 분리하여 관리하는 개념
+- 로깅, 감시, 선언적 트랜잭션, 보안, 캐싱 등 다양한 곳에서 사용되고 있다.
+- 관심사를 통해 Spring Framework가 어떤 메서드가 호출 되는지 관심있게 지켜보다가 특정 메서드가 호출되면 자동으로 메서드 전과 후에 다른 메서드가 호출 될 수 있도록 한다.
+
+### Spring AOP 용어
+
+- Joint Point : 모듈이 삽입되어 동작하게 되는 특정 위치(메서드 호출 등)
+- Point Cut : 다양한 Joint Point 중에 어떤 것을 사용할지 선택
+- Advice : Joint Point에 삽입되어 동작할 수 있는 코드
+- Weaving : Advice를 핵심 로직 코드에 적용 하는 것
+- Aspect : Point Cut + Advice
+
+### Spring AOP Advice 종류
+
+- before : 메서드 호출 전에 동작하는 Advice
+- after-returning : 에외 없이 호출된 메서드의 동작이 완료 되면 동작하는 Advice
+- after-throwing : 호출된 메서드 동작 중 예외가 발생했을 때 동작하는 Advice
+- after : 예외 발생 여부에 관계없이 호출된 메서드의 동작이 완료되면 동작하는 Advice
+- around : 메서드 호출 전과 후에 동작하는 Advice
+
+### Spring AOP 구현
+
+- XML을 이용한 구현 방법
+- @AspectJ 어노테이션을 이용한 구현 방법
+
+### 라이브러리 추가
+
+- org.aspectj
+
+***
+
+## execution 명시자
+
+### Execution 명시자
+
+- pointcut을 저장할 때 사용하는 문법
+- execution(접근 제한자 리턴타입 클래스이름 메서드이름(매개변수))
+- 접근 제한자 : public만 지원된다.
+- 리턴 타입 : 메서드의 매개 변수 타입
+- 클래스 이름 : 패키지를 포함한 클래스 이름
+- 메서드 이름 : 메서드의 이름
+- 매개 변수 : 매개변수의 형태
+- *: 하나의 모든 것을 의미
+- ..: 개수 상관없이 모든 것을 의미
+
+***
+
+## @AspectJ 어노테이션 사용하기
+
+### @AspectJ
+
+- @AspectJ 어노테이션을 활용해 Advisor 역할을 할 Bean을 설정
+
+### 지원 어노테이션
+
+- @Before : 관심사 동작 이전에 호출
+- @After : 관심사 동작 이후에 호출
+- @Around : 관심사 동작 이전 이후를 의미
+- @AfterReturning : 예외 없이 정상적으로 종료 되었을 때 호출
+- @AfterThrowing : 에외가 발생하여 종료 되었을 때 호출
+
+
+
+
+
+***
+
+
+
 ## JDBC & MyBatis
+
+## Spring JDBC
+
+### Spring JDBC
+
+- Spring Framework는 JDBC 프로그래밍을 위해 JdbcTemplate 클래스를 제공하고 있다.
+- JdbcTemplate 클래스는 SQL 쿼리문을 손쉽게 구현할 수 있도록 구현되어 있다.
+
+
+
+### 라이브러리 추가
+
+- Spring Framework는 JDBC 프로그래밍을 위해 JdbcTemplate 클래스를 제공하고 있다.
+- JdbcTemplate 클래스는 SQL 쿼리문을 손쉽게 구현할 수 있도록 구현되어 있다.
+
+### Mapper 클래스
+
+- Select문을 데이터를 가져올 때 어떤 컬럼의 값을 bean 어디에 주입할 것인지 결정을 해줘야 하는데 이 역할을 하는 클래스를 Mapper 클래스라고 부른다.
+
+***
+
+## MyBatis
+
+### MyBatis
+
+- Spring Framework에서 제공하는 JDBC 라이브러리를 보다 쉽게 작업할 수 있도록 만든 라이브러리
+- Mapper의 역할을 확장하여 쿼리문 작성 모두 Mapper에서 할 수 있도록 지원한다.
+- Spring Framework의 대표적인 JDBC 라이브러리 이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
